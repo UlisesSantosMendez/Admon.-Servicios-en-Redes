@@ -1,0 +1,39 @@
+hostname ulisantos
+!
+service telnet
+service http encrypted password HJOXNSEA$e094abaf031a430d604ef080ec5f75c1
+service ftp
+!
+administrator rcp encrypted password BAMJGOAC$MsahZKDSyPp.nEs78neih/
+!
+!
+!
+!
+router rip
+  network 10.10.10.0/24
+  network 20.20.20.0/24
+  network 192.168.1.0/24
+!
+interface loopback lo
+  ip address 127.0.0.1/8
+  ip mtu 16436
+!
+interface ethernet eth0
+  ip address 10.10.10.1/24
+  ip mtu 1500
+  no shutdown
+!
+interface ethernet eth1
+  ip address 20.20.20.1/24
+  ip mtu 1500
+  no shutdown
+!
+interface ethernet eth2
+  ip address 192.168.1.2/24
+  ip mtu 1500
+  no shutdown
+!
+interface ethernet eth3
+  ip mtu 1500
+  shutdown
+!
