@@ -1,0 +1,4 @@
+comunidadUJSM 2 161 192.168.1.72
+comunidadWUJSM 2 161 172.100.71.40
+korycomunidad 2 161 172.100.72.240
+kevinbaldovinosgutierrez 2 161 192.168.154.110
